@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url('https://64.media.tumblr.com/eb9d83900abde73d3d323019a45f3f8e/tumblr_om91agCwBL1rnbw6mo1_1280.gif');
+  background-size: 100% 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -20,8 +21,44 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+
 .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.fighting{
+  position:absolute;
+  background-image: url('https://thumbs.gfycat.com/SecondArtisticGyrfalcon-max-1mb.gif');
+  width:360px;
+  height:200px;
+  display: block;
+}
+
+.blinky{
+  background-image: url('https://i.pinimg.com/originals/33/59/98/33599865c833926d31edbfaa5b41ccc3.gif');
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-size: 100%;
+  position: absolute;
+}
+
+.pop{
+  background-image: url('https://flyclipart.com/thumb2/scratch-studio-688386.png');
+  width: 120px;
+  height: 90px;
+  background-size: 100%;
+  display: block;
+  position:absolute;
+}
+
+.hover {
+  background-image: url('https://mir-s3-cdn-cf.behance.net/projects/404/10c79e74015491.Y3JvcCw4NzQsNjgzLDM4LDE2Mg.png');
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-size: 100%;
 }

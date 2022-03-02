@@ -12,10 +12,10 @@ describe('fightingDancer', function() {
     expect(fightingDancer.$node).to.be.an.instanceof(jQuery);
   });
 
-  it('should have a step function that makes its node blink', function() {
-    sinon.spy(fightingDancer.$node, 'toggle');
+  it('should have a step function that makes its node animate', function() {
+    sinon.spy(fightingDancer.$node, 'animate');
     fightingDancer.step();
-    expect(fightingDancer.$node.toggle.called).to.be.true;
+    expect(fightingDancer.$node.animate.called).to.be.true;
   });
 
   describe('dance', function() {
@@ -24,11 +24,10 @@ describe('fightingDancer', function() {
       expect(fightingDancer.step.callCount).to.be.equal(0);
       clock.tick(timeBetweenSteps); // ? it seems an extra tick is necessary...
       clock.tick(timeBetweenSteps);
-
       expect(fightingDancer.step.callCount).to.be.equal(1);
-
       clock.tick(timeBetweenSteps);
       expect(fightingDancer.step.callCount).to.be.equal(2);
+      clock.tick(timeBetweenSteps);
     });
   });
 });
